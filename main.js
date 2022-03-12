@@ -17,7 +17,7 @@ function Play(card){
     let player2=get_random(cards);
     let match=Math.abs(player2-player1);
     console.log(dic[player1],dic[player2],player1,player2);
-    if(match===0){console.log("empate")}
+    if(match===0){console.log("empate");alert("empate")}
     else if(match===1){
         let min=Math.min(player1,player2);
         if (min===player1){scorePlayer+=1;console.log("gana jugador")}
