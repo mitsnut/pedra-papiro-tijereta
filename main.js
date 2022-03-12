@@ -31,6 +31,11 @@ function Play(card){
     }
     document.getElementById('player1').src="./images/"+dic[player1];
     document.getElementById('player2').src="./images/"+dic[player2];
-    alert("jugador:"+scorePlayer+" pc:"+scorePc)
+    let count1=document.getElementById('counter1');
+    count1.innerHTML="Jugador: "+scorePlayer;
+    let count2=document.getElementById('counter2');
+    count2.innerHTML="Computadora: "+scorePc;
+    if(scorePc===5){alert("Perdiste!!!");window.location.reload();}
+    else if(scorePlayer===5){alert("Ganaste");window.location.reload();}
 
 }
