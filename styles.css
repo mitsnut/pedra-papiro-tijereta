@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'clash'; /*a name to be used later*/
+    src: url('./fonts/clash.ttf'); /*URL to font*/
+}
+body{
+    margin:0;
+    background-image: url(./images/background.png);
+    background-size: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.title img{
+    max-width:50%;
+    height:auto;
+    margin-left: 25%;
+}
+.main-body{
+    display: flex;
+    gap: 200px;
+}
+.war-logo img{
+    margin-left: 25%;
+    max-width:50%;
+    height:auto;
+}
+.arena{
+    display: flex;
+    gap: 20px;
+    height: auto;
+    width: auto;
+}
+.player1,.player2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: clash;
+}
